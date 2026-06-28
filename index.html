@@ -1,0 +1,161 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Certificado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #611232 0%, #6d1739 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .header h1 {
+            color: #c89515;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .status-badge.valid {
+            background-color: #28a745;
+            color: white;
+        }
+        .status-badge.invalid {
+            background-color: #dc3545;
+            color: white;
+        }
+        .info-section {
+            margin: 30px 0;
+        }
+        .info-section h2 {
+            color: #c89515;
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .info-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #666;
+            width: 200px;
+            flex-shrink: 0;
+        }
+        .info-value {
+            color: #333;
+            flex: 1;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+            font-size: 14px;
+        }
+        .invalid-message {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #856404;
+        }
+        @media (max-width: 600px) {
+            .info-row {
+                flex-direction: column;
+            }
+            .info-label {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+<style>
+  .imageye-selected {
+    outline: 2px solid black !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+  }
+</style><link rel="stylesheet" href="chrome-extension://df69ca8a-d733-417e-90e8-1a82131d4a5e/app/content-style.css"></head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Verificación de Certificado</h1>
+            <div class="status-badge valid">VÁLIDO</div>
+        </div>
+        
+        <div class="info-section">
+            <h2>Información del Estudiante</h2>
+            <div class="info-row">
+                <div class="info-label">Nombre Completo:</div>
+                <div class="info-value">RIVERA DELGADO ARANTXA</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">CURP:</div>
+                <div class="info-value">RIDA960716MDFVLR02</div>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>Información del Curso</h2>
+            <div class="info-row">
+                <div class="info-label">Nombre del Curso:</div>
+                <div class="info-value">SanaMente LibreMente: jóvenes por la paz y contra las adicciones</div>
+            </div>            
+            <div class="info-row">
+                <div class="info-label">Duración:</div>
+                <div class="info-value">16 horas</div>
+            </div>                        
+            <div class="info-row">
+                <div class="info-label">Fecha de Inicio:</div>
+                <div class="info-value">25/06/2026</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Fecha de Finalización:</div>
+                <div class="info-value">28/06/2026</div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="footer">
+            <p>Fecha de verificación: 28/06/2026 16:23</p>
+            <p>SaberesMX</p>
+        </div>
+    </div>
+
+
+
+</body></html>
